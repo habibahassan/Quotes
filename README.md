@@ -5,11 +5,8 @@ Its an application that shows quotes,one can add different quotes and upvote or 
  *open your mobile data and go to your browser
  *open github and git clone my repository 
  *send a pull request
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
+## contributing
+For any information pull request is welcome
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
