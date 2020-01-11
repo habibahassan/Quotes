@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+      <div class="quote" *ngFor='let quote of quotes;let i = index'>
+        <p> {{quote.name}}</p>
+        <button (click)='toogleDetails(i)'>Toggle Details</button>
+
+        <votes-box></votes-box>
+
+        <app-quote-detail *ngIf="quote.showInformation" [quote]='quote' (deleteit)='deleteQuote($event,i)'>
+        </app-quote-detail>
+      </div>
+      <h4>Add New Quotes</h4>
+      <app-quotes-form (addQuotes)='addNewQuotes($event)'></app-quotes-form>
+    </div>
+
+  </div>
+  <div class="col-md-2">
+
+  </div>
+</div>
