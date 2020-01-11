@@ -6,7 +6,7 @@
     <div class="col-md-8">
       <div class="quote" *ngFor='let quote of quotes;let i = index'>
         <p> {{quote.name}}</p>
-        <button (click)='toogleDetails(i)'>Toggle Details</button>
+        <button (click)='toogleDetails(i)'>click to view details</button>
 
         <votes-box></votes-box>
 
