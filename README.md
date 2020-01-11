@@ -9,9 +9,14 @@ Its an application that shows quotes,one can add different quotes and upvote or 
 For any information pull request is welcome
 ## Author and acknowledgement
 By Habiba Hassan
-## Running end-to-end tests
+## BDD
+input	action	output
+quote,author,quoter	click add quote	quote on the list
+click rest	clears form --
+click view details	details
+click delete	quote deleted
+click up arrow	add vote
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
