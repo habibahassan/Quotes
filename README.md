@@ -22,4 +22,6 @@ click up arrow	add vote
 ## Contact Information
   * 0725142516
   *  Email:halimaadan92@gmail.com
-
+## License
+licensed under the [MIT License](license)
+ copyright(c) 2020 Quotes
