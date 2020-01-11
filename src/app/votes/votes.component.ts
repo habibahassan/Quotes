@@ -13,7 +13,7 @@ export class VotesComponent implements OnInit {
     this.likes++;
   }
   dislikeBtn() {
-    this.dislikes++;
+    this.dislikes--;
   }
   constructor() { }
 
