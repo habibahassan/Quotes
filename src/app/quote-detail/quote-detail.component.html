@@ -2,4 +2,4 @@
 <p>Author: {{quote.author}}</p>
 <p>Posted on {{quote.postDate|date}}</p>
 <p>Posted {{quote.postDate|dateCount}} days ago</p><br>
-<button (click)='quoteDeleting(true)'> Delete</button>
+<app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deletequote($event,i)'></app-quote-detail>
