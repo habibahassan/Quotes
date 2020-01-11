@@ -1,9 +1,10 @@
 # Quotes
 ## Description
 Its an application that shows quotes,one can add different quotes and upvote or downvote the quotes.
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup instruction
+ *open your mobile data and go to your browser
+ *open github and git clone my repository 
+ *send a pull request
 
 ## Build
 
