@@ -19,3 +19,7 @@ click up arrow	add vote
 ## Technogies used
 * angular
 * CSS
+## Contact Information
+  * 0725142516
+  *  Email:halimaadan92@gmail.com
+
