@@ -9,19 +9,13 @@ import { Quotes } from '../quote'
 export class QuotesDetailsComponent implements OnInit {
   @Input() quote: Quotes;
   @Output() deleteit = new EventEmitter<boolean>();
-
-  quoteDelete(complete: boolean) {
-    this.isComplete.emit(complete);
+  
+  quoteDeleting(deleting: boolean) {
+    this.deleteit.emit(deleting);
+    
   }
-  deleteQuote(isComplete, index){
-    if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
 
-      if (toDelete){
-        this.quote.splice(index,1)
-      }
-    }
-  }
+
   constructor() { }
 
   ngOnInit() {
