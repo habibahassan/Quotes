@@ -2,7 +2,7 @@
 <p>Author: {{quote.author}}</p>
 <p>Posted on {{quote.postDate|date}}</p>
 <p>Posted {{quote.postDate|dateCount}} days</p><br>
-<h3>Votes:{{quote.likes}}</h3>
+<h3>Votes:{{likes}}</h3>
 <button (click)="upvote()" class="upvote">upvote{{likes}}</button>
     <button (click)="downvote()" class="downvote">downvote{{dislikes}}</button><br>
     <br><br>
