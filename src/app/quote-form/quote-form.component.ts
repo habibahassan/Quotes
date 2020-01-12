@@ -14,7 +14,7 @@ export class QuotesFormComponent implements OnInit {
   submitQuotes() {
     let quoteLength = this.newQuotes.name.length;
     if (quoteLength < 6) {
-      alert("Hey, submit a quote");
+      alert("Hi, write a quote");
     } else {
       this.addQuotes.emit(this.newQuotes);
     }
