@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quote/quote.component';
 import { QuotesDetailsComponent } from './quote-detail/quote-detail.component';
 import { QuotesFormComponent } from './quote-form/quote-form.component';
-import { VotesComponent } from './votes/votes.component';
-import { QuotesDirective } from './quotes.directive';
+import { quotesDirective } from './quotes.directive';
 
 
 @NgModule({
@@ -17,9 +16,8 @@ import { QuotesDirective } from './quotes.directive';
     QuotesComponent,
     QuotesDetailsComponent,
     QuotesFormComponent,
-    VotesComponent,
     DateCountPipe,
-    QuotesDirective,
+    quotesDirective,
     
   ],
   imports: [

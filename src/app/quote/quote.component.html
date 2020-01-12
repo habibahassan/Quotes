@@ -8,8 +8,6 @@
         <p> {{quote.name}}</p>
         <button (click)='toogleDetails(i)'>click to view Details</button>
 
-        <votes-box></votes-box>
-
         <app-quote-detail *ngIf="quote.showInformation" [quote]='quote' (deleteit)='deleteQuote($event,i)'>
         </app-quote-detail>
       </div>

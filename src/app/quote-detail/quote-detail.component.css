@@ -4,3 +4,9 @@ button {
     border-radius: 5px;
     margin: 5px;
 }
+.upvote{
+    background-color: green;
+}
+.downvote{
+    background-color: red;
+}
