@@ -1,10 +1,10 @@
 form {
-    text-align: left;
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
     padding: 20px;
     width: 100%;
+    text-align: left;
 }
 
 .btn1 {
