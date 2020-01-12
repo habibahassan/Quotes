@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,} from '@angular/core';
 
 @Component({
   selector: 'votes-box',
@@ -9,10 +9,10 @@ export class VotesComponent implements OnInit {
   likes: number = 0;
   dislikes: number = 0;
 
-  likeBtn() {
+  upvote() {
     this.likes++;
   }
-  dislikeBtn() {
+  downvote() {
     this.likes--;
   }
   constructor() { }
