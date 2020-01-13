@@ -38,6 +38,46 @@ h4 {
     margin-top: 30px;
 }
 
-#votes {
-    margin-left: 10px;
+.upvote{
+    background-color: green;
 }
+.downvote{
+    background-color: red;
+}
+
+.votes{
+    display: flex;
+}
+
+.votes h3{
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+#liked{
+    color: blue;
+}
+#disliked{
+    color: red;
+}
+
+.bestVotes{
+    border: 1px solid black;
+    padding: 2%;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bestVotes p{
+    color: black;
+}
+
+.bestVotes h3{
+    font-style: italic;
+}
+.bestquote{
+    background-color: indigo;
+}
+

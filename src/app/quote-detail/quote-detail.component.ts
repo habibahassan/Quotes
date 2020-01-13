@@ -14,16 +14,9 @@ export class QuotesDetailsComponent implements OnInit {
     this.deleteit.emit(deleting);
     
   }
-  likes: number = 0;
-  dislikes: number = 0;
+  
 
-  upvote() {
-    this.likes++;
-  }
-  downvote() {
-    this.likes--;
-  }
-
+  
   constructor() { }
 
   ngOnInit() {

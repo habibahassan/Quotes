@@ -1,7 +1,8 @@
-import { Quotes } from './quote';
+import { DateCountPipe } from './date-count.pipe';
 
-describe('Quotes', () => {
+describe('DateCountPipe', () => {
   it('should create an instance', () => {
-    expect(new Quotes()).toBeTruthy();
+    const pipe = new DateCountPipe();
+    expect(pipe).toBeTruthy();
   });
 });
