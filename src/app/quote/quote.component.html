@@ -1,41 +1,41 @@
-<div class="container-fluid">
-  <div class="row">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+        <!--Quotes list-->
+        <div class="quote" *ngFor='let quote of quotes;let i = index'>
+          <p> {{quote.name}}</p>
+          <div class="votes">
+            <h3>Likes:<span id="liked">{{quote.counter1}}</span></h3>
+            <h3>Dislikes: <span id="disliked">{{quote.counter2}}</span></h3>
+          </div>
+          <div class="vote-buttons">
+            <button (click)="upvote(quote)" class="upvote">Like</button>
+            <button (click)="downvote(quote)" class="downvote">Dislike</button><br>
+          </div>
+
+          <button (click)='toogleDetails(i)'> Quote Details</button>
+          <app-quote-detail *ngIf="quote.showInformation" [quote]='quote' (deleteit)='deleteQuote($event,i)'>
+          </app-quote-detail>
+        </div>
+        <div class="col-md-8">
+            <button *ngIf='quotes.length>0' class="bestquote" (click)='getMostLikedQuote()'>Check Best Quote</button>
+            <div *ngIf='mostLikedQuote && quotes.length>0'>
+              <div class="bestVotes" appHighlightquote>
+                <h3>Most liked Poster:{{mostLikedQuote}}</h3>
+                <p> Most Votes:{{mostVotes}}</p>
+                <p> Most liked Author:{{mostLikedAuthor}}</p>
+                <p> Most Liked Quote:{{mostLikedPoster}}</p>
+      
+              </div>
+            </div>
+        <h4>Add New Quotes</h4>
+        <app-quotes-form (addQuotes)='addNewQuotes($event)'></app-quotes-form>
+      </div>
+
+    </div>
     <div class="col-md-2">
 
     </div>
-      <!--Quotes list-->
-      <div class="quote" *ngFor='let quote of quotes;let i = index'>
-        <p> {{quote.name}}</p>
-        <div class="votes">
-          <h3>Likes:<span id="liked">{{quote.counter1}}</span></h3>
-          <h3>Dislikes: <span id="disliked">{{quote.counter2}}</span></h3>
-        </div>
-        <div class="vote-buttons">
-          <button (click)="upvote(quote)" class="upvote">Like</button>
-          <button (click)="downvote(quote)" class="downvote">Dislike</button><br>
-        </div>
-
-        <button (click)='toogleDetails(i)'> Quote Details</button>
-        <app-quote-detail *ngIf="quote.showInformation" [quote]='quote' (deleteit)='deleteQuote($event,i)'>
-        </app-quote-detail>
-      </div>
-      <div class="col-md-8">
-          <button *ngIf='quotes.length>0' class="bestquote" (click)='getMostLikedQuote()'>Check Best Quote</button>
-          <div *ngIf='mostLikedQuote && quotes.length>0'>
-            <div class="bestVotes" appHighlightquote>
-              <h3>Most liked Quote:{{mostLikedQuote}}</h3>
-              <p> Most Votes:{{mostVotes}}</p>
-              <p> Most liked Author:{{mostLikedAuthor}}</p>
-              <p> Most Liked Poster:{{mostLikedPoster}}</p>
-    
-            </div>
-          </div>
-      <h4>Add New Quotes</h4>
-      <app-quotes-form (addQuotes)='addNewQuotes($event)'></app-quotes-form>
-    </div>
-
   </div>
-  <div class="col-md-2">
-
-  </div>
-</div>

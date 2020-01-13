@@ -59,8 +59,8 @@ export class QuotesComponent implements OnInit {
     for(let i=0; i<this.quotes.length; i++){
       if(this.quotes[i].counter1 > this.mostVotes){
         this.mostVotes = this.quotes[i].counter1;
-        this.mostLikedQuote = this.quotes[i].information;
         this.mostLikedPoster = this.quotes[i].name;
+        this.mostLikedQuote = this.quotes[i].information;
         this.mostLikedAuthor = this.quotes[i].author;
 
       }

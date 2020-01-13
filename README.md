@@ -9,13 +9,8 @@ Its an application that shows quotes,one can add different quotes and upvote or 
 For any information pull request is welcome
 ## Author and acknowledgement
 By Habiba Hassan
-## BDD
-input	action	output
-quote,author,quoter	click add quote	quote on the list
-click rest	clears form --
-click view details	details
-click delete	quote deleted
-click up arrow	add vote
+## Project link
+https://habibahassan.github.io/Quotes/.
 ## Technogies used
 * angular
 * CSS
