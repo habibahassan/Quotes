@@ -17,6 +17,8 @@ https://habibahassan.github.io/Quotes/.
 ## Contact Information
   * 0725142516
   *  Email:halimaadan92@gmail.com
+## Code Beat
+ [![codebeat badge](https://codebeat.co/badges/42727931-3a50-4180-b1e6-7496b1ed77e9)](https://codebeat.co/projects/github-com-habibahassan-quotes-master)
 ## License
 licensed under the [MIT License](license)
  copyright(c) 2020 Quotes
